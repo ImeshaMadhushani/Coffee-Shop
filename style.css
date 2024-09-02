@@ -108,6 +108,16 @@ header{
     flex-direction: column;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 .main { 
     display: flex; 
     align-items: center;
@@ -119,6 +129,7 @@ header{
 .main img{
     max-width: 50%;
     height: auto;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .main h1, .main p {
@@ -459,6 +470,38 @@ footer{
 }
 
 
+.table-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #814F5A;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
 
 
 
