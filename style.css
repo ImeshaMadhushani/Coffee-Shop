@@ -5,6 +5,10 @@
     font-family: 'Poppins',sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /* body{
     background-image: url("img/bg.png");
     background-size: cover;
@@ -13,7 +17,7 @@
     color: #f9f7f7;
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
 
 }
  */
@@ -24,14 +28,17 @@ header{
     z-index: 1000;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 50px; 
+    /* padding: 10px 50px;  */
     transition: 0.5s ease-in-out;
-    background-color: rgb(0, 0, 0);
+   /*  background-color: rgb(0, 0, 0); */
+    padding: 20px;
+        background-color: #333;
 } 
 
-.logo img{
+header .logo img{
     width: 100px;
     border-radius: 50%;
+    
 }
 
 .navbar{
@@ -504,16 +511,362 @@ tr:hover {
 }
 
 
+#contactus {
+    background-color: #f4f4f9;
+    padding: 60px 20px;
+    text-align: center;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.heading h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #4e342e;
+    /* A rich, coffee-brown color */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Contact Details Styling */
+.contactdetails,
+.socilmedia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.contactdetails p,
+.socilmedia p {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    color: #555;
+    padding: 10px;
+    max-width: 600px;
+    width: 100%;
+    transition: color 0.3s;
+}
+
+.contactdetails p img,
+.socilmedia p img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+/* Hover effect for contact and social media items */
+.contactdetails p:hover,
+.socilmedia p:hover {
+    color: #4e342e;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+footer p {
+    padding: 10px;
+}
+
+/* Responsive Adjustments */
+@media only screen and (max-width: 768px) {
+    #contactus {
+        padding: 40px 10px;
+    }
+
+    .heading h1 {
+        font-size: 2rem;
+    }
+
+    .contactdetails p,
+    .socilmedia p {
+        font-size: 1rem;
+        padding: 8px;
+    }
+}
+
+/* Keep your existing base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Existing styles remain the same until media queries */
+
+/* Add these comprehensive responsive styles at the end of your CSS file */
+@media screen and (max-width: 1200px) {
+    .main {
+        padding: 0 30px;
+    }
+
+    .products-container,
+    .recipe-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .search input[type="text"] {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    header {
+        padding: 10px 30px;
+    }
+
+    .navbar {
+        gap: 15px;
+    }
+
+    .products-container,
+    .recipe-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .main h1 {
+        font-size: 40px;
+    }
+
+    .search input[type="text"] {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        padding: 20px 0;
+        z-index: 1000;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar a {
+        display: block;
+        padding: 15px;
+        width: 100%;
+    }
+
+    .main {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .main img {
+        max-width: 80%;
+        margin: 20px auto;
+    }
+
+    .main-text {
+        width: 100%;
+    }
+
+    .main h1 {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    .aboutus {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .aboutus img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .about-txt {
+        margin: 0;
+    }
+
+    .products-container,
+    .recipe-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 15px;
+    }
+
+    .search input[type="text"] {
+        width: 60%;
+    }
+
+    .socilmedia {
+        margin-top: 20px;
+    }
+
+    .table-section {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 600px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header {
+        padding: 8px 15px;
+    }
+
+    .logo img {
+        width: 60px;
+    }
+
+    .cart img {
+        width: 25px;
+    }
+
+    .main h1 {
+        font-size: 28px;
+    }
+
+    .main p {
+        font-size: 14px;
+    }
+
+    .search {
+        padding: 10px;
+    }
+
+    .search input[type="text"] {
+        width: 70%;
+        font-size: 14px;
+    }
+
+    .search .search-btn {
+        padding: 3px 5px;
+    }
+
+    .search img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .heading h1 {
+        font-size: 28px;
+    }
+
+    .products-container .box,
+    .recipe-container .box {
+        margin: 10px;
+    }
+
+    .products-container img,
+    .recipe-container img {
+        height: 200px;
+    }
+
+    .contactdetails,
+    .socilmedia {
+        margin: 15px;
+    }
+
+    .contactdetails p,
+    .socilmedia p {
+        font-size: 14px;
+    }
+
+    .contactdetails img,
+    .socilmedia img {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+/* Add landscape mode optimization */
+@media screen and (max-height: 576px) and (orientation: landscape) {
+    .main {
+        flex-direction: row;
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .main img {
+        max-width: 40%;
+    }
+
+    .main-text {
+        width: 60%;
+        padding-left: 20px;
+    }
+
+    .navbar {
+        top: 60px;
+    }
+}
+
+/* Fix for very small devices */
+@media screen and (max-width: 320px) {
+    .main h1 {
+        font-size: 24px;
+    }
+
+    .products-container .box,
+    .recipe-container .box {
+        margin: 5px;
+    }
+
+    .search input[type="text"] {
+        width: 80%;
+    }
+}
+
+/* Add smooth scrolling for better user experience */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Improve table responsiveness */
+.table-section {
+    margin: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .table-section {
+        margin: 10px;
+    }
+
+    .table-section h1 {
+        font-size: 24px;
+    }
+}
 
 
 
 
 
-
-
-
-
-@media only screen and (max-width:768px){
+/* @media only screen and (max-width:768px){
     .menu-toggle {
         display: block;
     }
@@ -620,3 +973,4 @@ tr:hover {
 
 
 
+ */

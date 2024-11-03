@@ -1,0 +1,99 @@
+/* @media only screen and (max-width: 768px) {
+
+    /* Toggle button for mobile menu */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Navbar adjustments for mobile view */
+    .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    /* Display navbar when active */
+    .navbar.active {
+        display: flex;
+    }
+
+    /* Navbar links styling */
+    .navbar a {
+        text-transform: uppercase;
+        font-weight: 500;
+        color: #fffafa;
+        padding: 15px;
+        font-size: 16px;
+        border-bottom: 1px solid #814F5A;
+        transition: color 0.3s, background-color 0.3s;
+    }
+
+    /* Logo adjustments */
+    .logo img {
+        width: 70px;
+        /* Adjusted to avoid duplication */
+        border-radius: 50%;
+    }
+
+    /* Search input width on smaller screens */
+    .search input[type="text"] {
+        width: 50%;
+    }
+
+    /* Main section styling */
+    .main {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    /* Main section image adjustments */
+    .main img {
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+
+    /* Main section heading */
+    .main h1 {
+        font-size: 1.5rem;
+    }
+
+    /* Main section paragraph */
+    .main p {
+        font-size: 0.9rem;
+    }
+
+    /* About Us section adjustments */
+    .aboutus {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    /* About Us image styling */
+    .aboutus img {
+        width: 100%;
+        height: auto;
+        margin-top: 15px;
+    }
+
+    /* About Us heading */
+    .aboutus h1 {
+        font-size: 2rem;
+        /* Adjusted for smaller screens */
+        text-align: center;
+    }
+
+    /* About Us paragraph */
+    .aboutus p {
+        text-align: justify;
+    }
+}
+ */
+
+
